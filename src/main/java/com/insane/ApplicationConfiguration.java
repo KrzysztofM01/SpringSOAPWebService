@@ -1,4 +1,4 @@
-package pl.academy.code;
+package com.insane;
 
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.ApplicationContext;
@@ -15,7 +15,7 @@ import org.springframework.xml.xsd.XsdSchema;
 @Configuration
 @EnableWs
 public class ApplicationConfiguration extends WsConfigurerAdapter {
-    private static final String NAMESPACE_URL = "http://code.academy.pl/countries/";
+    private static final String NAMESPACE_URL = "http://insane.com/users/";
 
     @Bean
     public ServletRegistrationBean messageDispatcherServlet (ApplicationContext applicationContext) {
@@ -26,21 +26,21 @@ public class ApplicationConfiguration extends WsConfigurerAdapter {
         return new ServletRegistrationBean(messageDispatcherServlet, "/ws/*");
     }
 
-    @Bean (name = "countries")
-    public DefaultWsdl11Definition defaultWsdl11Definition (XsdSchema countriesSchema) {
+    @Bean (name = "users")
+    public DefaultWsdl11Definition defaultWsdl11Definition (XsdSchema usersSchema) {
 
         DefaultWsdl11Definition defaultWsdl11Definition = new DefaultWsdl11Definition();
-        defaultWsdl11Definition.setPortTypeName("CountriesPort");
+        defaultWsdl11Definition.setPortTypeName("UsersPort");
         defaultWsdl11Definition.setLocationUri("/ws");
         defaultWsdl11Definition.setTargetNamespace(NAMESPACE_URL);
-        defaultWsdl11Definition.setSchema(countriesSchema);
+        defaultWsdl11Definition.setSchema(usersSchema);
 
         return defaultWsdl11Definition;
     }
 
     @Bean
     XsdSchema countriesSchema() {
-        return new SimpleXsdSchema(new ClassPathResource("static/country.xsd"));
+        return new SimpleXsdSchema(new ClassPathResource("static/user.xsd"));
     }
 
 }

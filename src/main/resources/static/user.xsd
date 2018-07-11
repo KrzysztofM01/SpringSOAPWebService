@@ -1,0 +1,38 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://insane.com/users/"
+           targetNamespace="http://insane.com/users/" elementFormDefault="qualified">
+
+    <xs:element name="getUserRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getUserResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="user" type="tns:user"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="user">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="age" type="xs:int"/>
+            <xs:element name="birthday" type="xs:date"/>
+            <xs:element name="from" type="xs:string"/>
+            <xs:element name="phone" type="xs:int"/>
+            <xs:element name="typeOfSubscription" type="tns:typeOfSubscription"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="typeOfSubscription">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Subscribed"/>
+            <xs:enumeration value="Privileged"/>
+            <xs:enumeration value="None"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
