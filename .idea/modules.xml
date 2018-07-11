@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ClientSOAP.iml" filepath="$PROJECT_DIR$/ClientSOAP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringSOAPWebServiceClient.iml" filepath="$PROJECT_DIR$/SpringSOAPWebServiceClient.iml" />
     </modules>
   </component>
 </project>

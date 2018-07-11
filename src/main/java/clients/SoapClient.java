@@ -1,17 +1,16 @@
 package clients;
 
-import countries.GetCountryRequest;
-import countries.GetCountryResponse;
 import org.springframework.ws.client.core.support.WebServiceGatewaySupport;
+import users.GetUserRequest;
+import users.GetUserResponse;
 
 public class SoapClient extends WebServiceGatewaySupport {
 
-    public GetCountryResponse getCountryResponse (String name) {
-        GetCountryRequest getCountryRequest = new GetCountryRequest();
-        getCountryRequest.setName(name);
-        GetCountryResponse getCountryResponse = (GetCountryResponse) getWebServiceTemplate().marshalSendAndReceive(getCountryRequest);
+    public GetUserResponse getUserResponse(String name) {
+        GetUserRequest getUserRequest = new GetUserRequest();
+        getUserRequest.setName(name);
 
-        return getCountryResponse;
+        return (GetUserResponse) getWebServiceTemplate().marshalSendAndReceive(getUserRequest);
     }
 
 }

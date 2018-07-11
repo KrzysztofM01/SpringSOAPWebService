@@ -1,6 +1,9 @@
-C:\Users\User\IdeaProjects\ClientSOAP\target\generated-sources\xjc\countries\package-info.java
-C:\Users\User\IdeaProjects\ClientSOAP\target\generated-sources\xjc\countries\GetCountryResponse.java
-C:\Users\User\IdeaProjects\ClientSOAP\target\generated-sources\xjc\countries\Country.java
-C:\Users\User\IdeaProjects\ClientSOAP\target\generated-sources\xjc\countries\GetCountryRequest.java
-C:\Users\User\IdeaProjects\ClientSOAP\target\generated-sources\xjc\countries\ObjectFactory.java
-C:\Users\User\IdeaProjects\ClientSOAP\target\generated-sources\xjc\countries\Currency.java
+C:\Users\Krzysiek\IdeaProjects\springClient\target\generated-sources\xjc\users\GetUserRequest.java
+C:\Users\Krzysiek\IdeaProjects\springClient\src\main\java\ApplicationConfiguration.java
+C:\Users\Krzysiek\IdeaProjects\springClient\target\generated-sources\xjc\users\User.java
+C:\Users\Krzysiek\IdeaProjects\springClient\target\generated-sources\xjc\users\GetUserResponse.java
+C:\Users\Krzysiek\IdeaProjects\springClient\target\generated-sources\xjc\users\TypeOfSubscription.java
+C:\Users\Krzysiek\IdeaProjects\springClient\src\main\java\Application.java
+C:\Users\Krzysiek\IdeaProjects\springClient\src\main\java\clients\SoapClient.java
+C:\Users\Krzysiek\IdeaProjects\springClient\target\generated-sources\xjc\users\ObjectFactory.java
+C:\Users\Krzysiek\IdeaProjects\springClient\target\generated-sources\xjc\users\package-info.java

@@ -49,10 +49,10 @@
                 </executions>
                 <configuration>
                     <schemaLanguage>WSDL</schemaLanguage>
-                    <generatePackage>countries</generatePackage>
+                    <generatePackage>users</generatePackage>
                     <schemas>
                         <schema>
-                            <url>http://localhost:8080/ws/countries.wsdl</url>
+                            <url>http://localhost:8080/ws/users.wsdl</url>
                         </schema>
                     </schemas>
                 </configuration>

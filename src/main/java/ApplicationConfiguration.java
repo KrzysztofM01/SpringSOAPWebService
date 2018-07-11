@@ -7,19 +7,19 @@ import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 public class ApplicationConfiguration {
 
     @Bean
-    public Jaxb2Marshaller countriesMarshaller () {
+    public Jaxb2Marshaller usersMarshaller() {
         Jaxb2Marshaller jaxb2Marshaller = new Jaxb2Marshaller();
-        jaxb2Marshaller.setContextPath("countries");
+        jaxb2Marshaller.setContextPath("users");
 
         return jaxb2Marshaller;
     }
 
     @Bean
-    public SoapClient soapClient (Jaxb2Marshaller countriesMarshaller) {
+    public SoapClient soapClient (Jaxb2Marshaller usersMarshaller) {
         SoapClient soapClient = new SoapClient();
         soapClient.setDefaultUri("http://localhost:8080/ws/");
-        soapClient.setMarshaller(countriesMarshaller);
-        soapClient.setUnmarshaller(countriesMarshaller);
+        soapClient.setMarshaller(usersMarshaller);
+        soapClient.setUnmarshaller(usersMarshaller);
 
         return soapClient;
     }

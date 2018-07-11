@@ -1,9 +1,9 @@
-countries\Country.class
-countries\GetCountryResponse.class
+users\GetUserRequest.class
+users\ObjectFactory.class
 clients\SoapClient.class
-countries\Currency.class
-countries\GetCountryRequest.class
+users\TypeOfSubscription.class
 ApplicationConfiguration.class
-countries\package-info.class
-countries\ObjectFactory.class
 Application.class
+users\User.class
+users\GetUserResponse.class
+users\package-info.class
